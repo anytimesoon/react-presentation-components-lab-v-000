@@ -11,9 +11,9 @@ export default class SimpleComponent extends Component {
   }
   
   handleClick = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => ({
       mood: prevState.mood === 'happy' ? 'sad' : 'happy'
-    })
+    }))
   }
   
   render(){
